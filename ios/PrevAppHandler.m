@@ -1,6 +1,8 @@
 // PrevAppHandler.m
 
 #import "PrevAppHandler.h"
+@import UIKit;
+@import ObjectiveC.runtime;
 
 inline BOOL jumpBackToPreviousApp() {
     Ivar sysNavIvar = class_getInstanceVariable(UIApplication.class, "_systemNavigationAction");
@@ -18,7 +20,7 @@ inline BOOL jumpBackToPreviousApp() {
 
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(sampleMethod:(NSString *)stringArgument numberParameter:(nonnull NSNumber *)numberArgument callback:(RCTResponseSenderBlock)callback)
+RCT_EXPORT_METHOD(minimize:(RCTResponseSenderBlock)callback)
 {
     // TODO: Implement some actually useful functionality
     NSBool response = [BOOL jumpBackToPreviousApp];
