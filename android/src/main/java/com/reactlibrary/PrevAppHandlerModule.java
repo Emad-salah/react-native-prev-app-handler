@@ -1,6 +1,6 @@
 // PrevAppHandlerModule.java
 
-package com.reactlibrary;
+package com.autharmor.prevapphandler;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;

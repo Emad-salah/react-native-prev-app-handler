@@ -1,6 +1,6 @@
 // PrevAppHandlerPackage.java
 
-package com.reactlibrary;
+package com.autharmor.prevapphandler;
 
 import java.util.Arrays;
 import java.util.Collections;
